@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Question 5</title>
+</head>
+<body id="body">
+	<!-- 2nd Event -->
+	<input type="submit" onclick="alert('button clicked');" value="onclick event">
+	<!-- 3rd Event -->
+	<input type="text" name="name" onkeypress="alert('Keys where pressed');" placeholder="on key pressed event"> 
+	<!-- 4th and 5th event -->
+	<h1 id='h1' onmouseover="document.getElementById('h1').style.color = 'red';" onmouseleave="document.getElementById('h1').style.color = 'yellow';">Mouse over and leave event</h1>
+	<!-- 7th event -->
+	<p id="p" ondblclick="document.getElementById('p').style.color = 'red';">
+		This is double click event
+	</p>
+	<!-- 8th event -->
+	<input type="text" onkeydown="alert('Key down evnet triggered')" placeholder="KEy down event">
+	<!-- 9th event -->
+	<input type='text' onkeyup = "alert('Key up evnet triggered')" placeholder="KEy up event"></h1>
+	<!-- 10th event -->
+	<select id="mySelect" onchange="document.getElementById('body').style.background = 'red';">
+	  <option>Onchange event 1
+	  <option>Onchange event 2
+	  <option>Onchange event 3
+	  <option>Onchange event 4
+	</select>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</body>
+<script>
+	// 1st event 
+	window.onload = function(){
+		alert('Page Loaded');
+		// 6th Event
+		window.addEventListener('scroll', function(){
+			alert('Mouse scrolled');
+		});
+	}
+</script>
+</html>

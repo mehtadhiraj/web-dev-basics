@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Question 6</title>
+</head>
+<body>
+	<button onclick="loadXMLDoc()">load XML</button>
+	<table id="table">
+		
+	</table>
+</body>
+<script>
+	function loadXMLDoc() {
+	  var xmlhttp = new XMLHttpRequest();
+	  xmlhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	      myFunction(this);
+	    }
+	  };
+	  xmlhttp.open("GET", "q6xml.xml", true);
+	  xmlhttp.send();
+	}
+	function myFunction(xml) {
+	  var i;
+	  var xmlDoc = xml.responseXML;
+	  var table="<tr><th>SUBJECT</th><th>INCHARGE</th></tr>";
+	  var x = xmlDoc.getElementsByTagName("CD");
+	  for (i = 0; i <x.length; i++) { 
+	    table += "<tr><td>" +
+	    x[i].getElementsByTagName("SUBJECT")[0].childNodes[0].nodeValue +
+	    "</td><td>" +
+	    x[i].getElementsByTagName("INCHARGE")[0].childNodes[0].nodeValue +
+	    "</td></tr>";
+	  }
+	  document.getElementById("table").innerHTML = table;
+	}
+</script>
+</html>

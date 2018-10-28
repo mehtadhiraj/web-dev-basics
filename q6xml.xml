@@ -1,0 +1,24 @@
+<CATALOG>
+
+  <CD>
+    <SUBJECT>Internet Programming</SUBJECT>
+    <INCHARGE> Dr.Vijay Katkar</INCHARGE>
+  </CD>
+
+  <CD>
+    <SUBJECT>Microcontroller and Embedded Programming</SUBJECT>
+    <INCHARGE> Prof.Leena Ladge </INCHARGE>
+  </CD>
+
+  <CD>
+    <SUBJECT>Cryptography and Network Security</SUBJECT>
+    <INCHARGE> Prof.Suneha Patil</INCHARGE>
+  </CD>
+
+  <CD>
+    <SUBJECT>Advance Database</SUBJECT>
+    <INCHARGE>Prof.Deepali Gawale</INCHARGE>
+  </CD>
+
+</CATALOG>
+
