@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Question 2</title>
+ <style>
+		video, audio{
+			max-width:100%;
+			height: 250px;
+		}
+		.column {
+		    float: left;
+		    width: 23%;
+		    padding: 2px;
+		}
+        
+        @media only screen and (max-width: 900px) {
+		    .column {
+		        width: 48%;
+		    }
+		}
+
+		@media only screen and (max-width: 600px) {
+		    .column {
+		        width: 100%;
+		    }
+		}
+	</style>
+</head>
+<body>
+	<!-- https://cdn.pixabay.com/photo/2017/12/29/18/47/nature-3048299__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2017/11/07/20/43/xmas-2928142__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2014/05/16/21/16/stars-345902__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2017/10/10/07/48/hills-2836301__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2016/08/31/07/28/water-1632785__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2017/06/11/02/04/panorama-2391345__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2017/10/29/15/58/yorkshire-2900064__340.jpg -->
+	<!-- https://cdn.pixabay.com/photo/2016/11/22/23/19/constellation-1851128__340.jpg -->
+	<h2 align="center">Video Gallery</h2>
+	<div class="row">
+		<div class="column">
+			<video controls="controls" autoplay>
+				<source src="dangerous.mp4">
+			</video>
+		</div>
+		<div class="column">
+			<video controls="controls">
+				<source src="dangerous.mp4">
+			</video>
+		</div>
+		<div class="column">
+			<video controls="controls">
+				<source src="dangerous.mp4">
+			</video>
+		</div>
+		<div class="column">
+			<video controls="controls">
+				<source src="dangerous.mp4">
+			</video>
+		</div>
+		<div class="column">
+			<audio controls="controls">
+				<source src="slowmotion.mp3">
+			</audio>
+		</div>
+		<div class="column">
+			<audio controls="controls">
+				<source src="slowmotion.mp3">
+			</audio>
+		</div>
+		<div class="column">
+			<audio controls="controls">
+				<source src="slowmotion.mp3">
+			</audio>
+		</div>
+		<div class="column">
+			<audio controls="controls">
+				<source src="slowmotion.mp3">
+			</audio>
+		</div>
+	</div>
+</body>
+</html>
